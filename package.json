@@ -5,7 +5,7 @@
     "private": true,
     "main": "app://host/index.html",
     "dependencies": {
-        "webchimera.js": "*"
+        "wcjs-renderer": "*"
     },
     "cmake-js": {
         "runtime": "nw",
