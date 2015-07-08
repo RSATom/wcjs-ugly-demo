@@ -1,16 +1,17 @@
 {
-    "name": "Ugly",
-    "description": "basic demo for WebChimera.js",
-    "version": "0.1.0",
-    "private": true,
-    "main": "app://host/index.html",
-    "dependencies": {
-        "cmake-js": "*",
-        "wcjs-renderer": "*"
-    },
-    "cmake-js": {
-        "runtime": "nw",
-        "runtimeVersion": "0.12.2"
-    },
-    "env": "development"
+  "name": "Ugly",
+  "description": "basic demo for WebChimera.js",
+  "version": "0.1.0",
+  "private": true,
+  "main": "app://host/index.html",
+  "dependencies": {
+    "cmake-js": "*",
+    "wcjs-renderer": "*",
+    "webchimera.js": "^0.1.21"
+  },
+  "cmake-js": {
+    "runtime": "nw",
+    "runtimeVersion": "0.12.2"
+  },
+  "env": "development"
 }
