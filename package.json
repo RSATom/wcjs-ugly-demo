@@ -7,7 +7,7 @@
   "dependencies": {
     "cmake-js": "*",
     "wcjs-renderer": "*",
-    "webchimera.js": "^0.1.21"
+    "webchimera.js": "*"
   },
   "cmake-js": {
     "runtime": "nw",
