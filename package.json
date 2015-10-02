@@ -10,7 +10,7 @@
   },
   "cmake-js": {
     "runtime": "nw",
-    "runtimeVersion": "0.12.2"
+    "runtimeVersion": "0.12.3"
   },
   "env": "development"
 }
