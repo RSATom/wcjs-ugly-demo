@@ -5,8 +5,8 @@
   "private": true,
   "main": "app://host/index.html",
   "dependencies": {
-    "wcjs-renderer": "*",
-    "webchimera.js": "*"
+    "webchimera.js": "*",
+    "webgl-video-renderer": "*"
   },
   "cmake-js": {
     "runtime": "nw",
