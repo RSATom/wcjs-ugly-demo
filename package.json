@@ -6,7 +6,7 @@
   "main": "app://host/index.html",
   "dependencies": {
     "webchimera.js": "*",
-    "webgl-video-renderer": "*"
+    "webgl-video-renderer": ">=0.2.0"
   },
   "cmake-js": {
     "runtime": "nw",
