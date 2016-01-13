@@ -2,7 +2,7 @@
 <script>
 var renderContext = require("webgl-video-renderer").setupCanvas("canvas");
 
-var player = require("WebChimera.js").createPlayer();
+var player = require("webchimera.js").createPlayer();
 player.onFrameReady =
 	function(frame) {
 		renderContext.render(frame, frame.width, frame.height, frame.uOffset, frame.vOffset);
