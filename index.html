@@ -1,12 +1,15 @@
 <canvas id="canvas"/>
 <script>
-var renderContext = require("webgl-video-renderer").setupCanvas("canvas");
+var renderContext = require("webgl-video-renderer").setupCanvas(document.getElementById("canvas"));
 
-var player = require("webchimera.js").createPlayer();
-player.onFrameReady =
-	function(frame) {
-		renderContext.render(frame, frame.width, frame.height, frame.uOffset, frame.vOffset);
-	}
+var wcjs_gs = require("wcjs-gs").createPlayer();
 
-player.play("rtmp://video1.earthcam.com:1935/earthcamtv/Stream1");
+wcjs_gs.parseLaunch("uridecodebin uri=http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.avi name=dec ! appsink name=sink dec. ! audioconvert ! autoaudiosink");
+wcjs_gs.setAppSinkCallback("sink",
+	function(type, frame) {
+		if(type == 2) {
+			renderContext.render(frame, frame.width, frame.height, frame.planes[1], frame.planes[2]);
+		}
+	} );
+wcjs_gs.setState(4);
 </script>
