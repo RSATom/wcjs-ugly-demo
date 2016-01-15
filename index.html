@@ -5,7 +5,7 @@ var renderContext = require("webgl-video-renderer").setupCanvas(document.getElem
 var wcjs_gs = require("wcjs-gs").createPlayer();
 
 wcjs_gs.parseLaunch("uridecodebin uri=http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.avi name=dec ! appsink name=sink dec. ! audioconvert ! autoaudiosink");
-wcjs_gs.setAppSinkCallback("sink",
+wcjs_gs.addAppSinkCallback("sink",
 	function(type, frame) {
 		if(type == 2) {
 			renderContext.render(frame, frame.width, frame.height, frame.planes[1], frame.planes[2]);
