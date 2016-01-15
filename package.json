@@ -1,14 +1,14 @@
 {
   "name": "wcjs-gs-demo",
   "description": "basic demo for WebChimera.js GStreamer edition",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "app://host/index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/RSATom/wcjs-ugly-demo/tree/wcjs-gs"
   },
   "dependencies": {
-    "wcjs-gs": "*",
+    "wcjs-gs": ">=0.2.0",
     "webgl-video-renderer": ">=0.2.0"
   },
   "cmake-js": {
