@@ -6,7 +6,7 @@ basic demo for WebChimera.js
 ### Windows
 * run `git clone https://github.com/RSATom/wcjs-ugly-demo.git`
 * run `npm install --ignore-scripts`
-* download `WebChimera.js_*_VLC_*_win.zip` corresponding to your engine from [WebChimera.js releases page](https://github.com/RSATom/WebChimera.js/releases) and extract to `node_modules\webchimera.js\Release`
+* download `WebChimera.js_*_VLC_*_win.zip` corresponding to your engine from [WebChimera.js releases page](https://github.com/RSATom/WebChimera.js/releases) and extract to `node_modules`
 * run `run_*.cmd`
 
 ### Mac OS X
