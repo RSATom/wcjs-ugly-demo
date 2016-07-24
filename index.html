@@ -1,6 +1,9 @@
+<html>
+<body>
 <canvas id="canvas"/>
 <script>
-var renderContext = require("webgl-video-renderer").setupCanvas("canvas");
+var canvas = document.getElementById("canvas");
+var renderContext = require("webgl-video-renderer").setupCanvas(canvas);
 
 var player = require("webchimera.js").createPlayer();
 player.onFrameReady =
@@ -10,3 +13,5 @@ player.onFrameReady =
 
 player.play("rtmp://video1.earthcam.com:1935/earthcamtv/Stream1");
 </script>
+</body>
+</html>

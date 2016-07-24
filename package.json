@@ -1,16 +1,16 @@
 {
   "name": "Ugly",
   "description": "basic demo for WebChimera.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "main": "app://host/index.html",
+  "main": "index.html",
   "dependencies": {
     "webchimera.js": "*",
     "webgl-video-renderer": ">=0.2.0"
   },
   "cmake-js": {
     "runtime": "nw",
-    "runtimeVersion": "0.12.3"
+    "runtimeVersion": "0.16.0"
   },
   "env": "development"
 }
