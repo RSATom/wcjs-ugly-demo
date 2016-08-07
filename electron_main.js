@@ -1,8 +1,8 @@
-var app = require("app");
-var BrowserWindow = require("browser-window");
+var BrowserWindow = require('electron').BrowserWindow
+var app = require('electron').app
 
 app.on("ready", function() {
-  var win = new BrowserWindow({});
-  win.toggleDevTools();
-  win.loadUrl("file://" + __dirname + "/index.html");
+  var win = new BrowserWindow()
+  win.toggleDevTools()
+  win.loadURL("file://" + __dirname + "/index.html")
 })
