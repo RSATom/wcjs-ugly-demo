@@ -12,6 +12,9 @@ try {
   var app = require("electron").app;
 }
 
+if(process.platform == 'win32')
+  process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, 'node_modules/webchimera.js/plugins');
+
 app.on("ready", function() {
   var win = new BrowserWindow();
   win.toggleDevTools();
