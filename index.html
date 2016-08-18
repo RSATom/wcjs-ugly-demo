@@ -6,6 +6,10 @@ var canvas = document.getElementById("canvas");
 var renderContext = require("webgl-video-renderer").setupCanvas(canvas);
 
 var player = require("webchimera.js").createPlayer();
+player.onLogMessage =
+	function(level, message, format) {
+		console.log(message);
+	}
 player.onFrameReady =
 	function(frame) {
 		renderContext.render(frame, frame.width, frame.height, frame.uOffset, frame.vOffset);
