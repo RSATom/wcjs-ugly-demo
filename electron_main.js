@@ -1,8 +1,16 @@
-var app = require("app");
-var BrowserWindow = require("browser-window");
+const {app, BrowserWindow} = require('electron')
+const path = require('path')
+const url = require('url')
 
-app.on("ready", function() {
-  var win = new BrowserWindow({});
-  win.toggleDevTools();
-  win.loadUrl("file://" + __dirname + "/index.html");
-})
+function createWindow () {
+	win = new BrowserWindow({width: 1024, height: 1024})
+	win.toggleDevTools();
+
+	win.loadURL(url.format({
+		pathname: path.join(__dirname, 'index.html'),
+		protocol: 'file:',
+		slashes: true
+	}))
+}
+
+app.on('ready', createWindow)

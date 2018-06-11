@@ -2,9 +2,10 @@
 <script>
 var renderContext = require("webgl-video-renderer").setupCanvas(document.getElementById("canvas"));
 
-var wcjs_gs = require("wcjs-gs").createPlayer();
+var wcjs_gs_addon = new require("wcjs-gs");
+var wcjs_gs = new wcjs_gs_addon.JsPlayer();
 
-wcjs_gs.parseLaunch("uridecodebin uri=http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.avi name=dec ! appsink name=sink dec. ! audioconvert ! autoaudiosink");
+wcjs_gs.parseLaunch("videotestsrc ! appsink name=sink");
 wcjs_gs.addAppSinkCallback("sink",
 	function(type, frame) {
 		if(type == wcjs_gs.AppSinkNewSample) {
