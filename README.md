@@ -34,6 +34,6 @@ basic demo for WebChimera.js
 * `run_nwjs.cmd`
 
 ### Electron build & run
-* `npm install -g electron-prebuilt`
+* `npm install -g electron`
 * `build_electron.cmd`
 * `run_electron.cmd`
