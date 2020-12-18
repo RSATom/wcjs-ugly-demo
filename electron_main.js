@@ -16,7 +16,11 @@ if(process.platform == 'win32')
   process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, 'node_modules/webchimera.js/plugins');
 
 app.on("ready", function() {
-  var win = new BrowserWindow();
+  var win = new BrowserWindow({
+      webPreferences: {
+          nodeIntegration: true
+      }
+  });
   win.toggleDevTools();
   win.loadURL("file://" + __dirname + "/index.html");
 })
