@@ -18,7 +18,8 @@ if(process.platform == 'win32')
 app.on("ready", function() {
   var win = new BrowserWindow({
       webPreferences: {
-          nodeIntegration: true
+          nodeIntegration: true,
+          contextIsolation: false,
       }
   });
   win.toggleDevTools();
