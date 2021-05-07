@@ -29,10 +29,6 @@ basic demo for WebChimera.js
 * `git clone https://github.com/RSATom/wcjs-ugly-demo.git`
 * `cd wcjs-ugly-demo`
 
-### NW.js build & run
-* `build_nwjs.cmd`
-* `run_nwjs.cmd`
-
 ### Electron build & run
 * `npm install -g electron`
 * `build_electron.cmd`
